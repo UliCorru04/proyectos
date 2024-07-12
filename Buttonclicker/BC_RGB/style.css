@@ -1,0 +1,55 @@
+body{
+    background-color: bisque;
+    text-align: center;
+    
+}
+
+div.boton > button#add1{
+    transition: 0.1s;
+    background-color: rgb(0, 255, 8);
+    border: solid 2px black;
+    border-radius: 3px;
+    font-size: 30px;
+}
+div.boton > button#add1:hover{
+    transition: 0.1s;
+    background-color: rgb(15, 216, 21);
+}
+div.boton > button#add1:active{
+    transition: 0.1s;
+    background-color: rgb(243, 255, 69);
+}
+
+div.boton > button#rem1{
+    transition: 0.1s;
+    background-color: rgb(255, 0, 0);
+    border: solid 2px black;
+    border-radius: 3px;
+    font-size: 30px;
+}
+div.boton > button#rem1:hover{
+    transition: 0.1s;
+    background-color: rgb(221, 20, 20);
+}
+div.boton > button#rem1:active{
+    transition: 0.1s;
+    background-color: rgb(247, 128, 24);
+}
+
+div.boton{
+    background-color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 6px black;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    height: 50%;
+    width: 50%;
+}
+
+h1#contador{
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
