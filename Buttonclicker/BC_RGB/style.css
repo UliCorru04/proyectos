@@ -1,7 +1,7 @@
 body{
-    background-color: bisque;
+    background-image: linear-gradient(to left, rgb(132, 128, 128), rgb(179, 168, 168), rgb(108, 107, 107));
     text-align: center;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 div.boton > button#add1{
@@ -10,6 +10,7 @@ div.boton > button#add1{
     border: solid 2px black;
     border-radius: 3px;
     font-size: 30px;
+    font-weight: bold;
 }
 div.boton > button#add1:hover{
     transition: 0.1s;
@@ -26,6 +27,7 @@ div.boton > button#rem1{
     border: solid 2px black;
     border-radius: 3px;
     font-size: 30px;
+    font-weight: bold;
 }
 div.boton > button#rem1:hover{
     transition: 0.1s;
@@ -37,7 +39,7 @@ div.boton > button#rem1:active{
 }
 
 div.boton{
-    background-color: azure;
+    background-color:bisque;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -47,6 +49,7 @@ div.boton{
     padding-bottom: 20px;
     height: 50%;
     width: 50%;
+    font-weight: bold;
 }
 
 h1#contador{

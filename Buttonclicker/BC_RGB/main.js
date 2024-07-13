@@ -1,7 +1,7 @@
 document.addEventListener('click', handleClick);
 
 function handleClick(e){
-    let h1 = document.querySelector('h1');
+    let h1 = document.querySelector('#contador');
     let n = h1.textContent;
     if (e.target.id == 'add1'){
         n++;
@@ -18,5 +18,8 @@ function handleClick(e){
         let g2 = Math.floor(Math.random() * 256);
         let b2 = Math.floor(Math.random() * 256);
         div.style.background= `linear-gradient(rgb(${r1}, ${g1}, ${b1}), rgb(${r2}, ${g2}, ${b2}))`;
+        let h2 = document.querySelector('h2');
+        h2.textContent = `Valores RGB: (${r1}, ${g1}, ${b1}) y (${r2}, ${g2}, ${b2})`;
+        h2.append();
     }
 }

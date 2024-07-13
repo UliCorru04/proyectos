@@ -2,7 +2,6 @@ let contador = 0; // Su valor cambiará dependiendo del botón presionado.
 let valor = document.getElementById("contador");
 let cambiocolor = document.querySelector(".boton");
 
-
 function Color(){
     // Esta función crea código hexadecimal.
     let colors = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
@@ -12,13 +11,6 @@ function Color(){
         prefix += colors[hex];
     }
     return prefix;
-}
-
-function generadorColor(){
-    // Esta función define el valor de la gradiente.
-    let ColorUno = Color();
-    let ColorDos = Color();
-    gradiente='linear-gradient(to left,' +ColorUno+ ',' +ColorDos+')';
 }
 
 document.getElementById('add1').onclick = function Aumento(){
@@ -32,6 +24,11 @@ document.getElementById('rem1').onclick = function Disminucion(){
     // del color de fondo aleatorio.
     contador -= 1;
     valor.textContent = contador;
-    generadorColor();
+    let ColorUno = Color();
+    let ColorDos = Color();
+    gradiente='linear-gradient(to left,' +ColorUno+ ',' +ColorDos+')';
     cambiocolor.style.backgroundImage= gradiente;
+    let h2 = document.querySelector('h2');
+    h2.textContent = `Valores Hexadecimal: ${ColorUno} y ${ColorDos}`;
+    h2.append();
 }
