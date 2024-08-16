@@ -46,10 +46,10 @@ button{
 }
 
 #sumar:disabled{
-    border: solid 2px rgb(255, 0, 0);
+    border: solid 2px rgb(100, 0, 0);
     border-radius: 5px;
     background-color: black;
-    color: rgb(255, 0, 0);
+    color: rgb(100, 0, 0);
     font-size: 20px;
     padding: 10px 2em;
     transition: 0.1s;
@@ -83,4 +83,11 @@ button{
     font-size: 20px;
     padding: 10px 2em;
     transition: 0.1s;
+}
+
+h4{
+    margin: 5px;
+    padding: 5px;
+    text-align: end;
+    color: white;
 }
