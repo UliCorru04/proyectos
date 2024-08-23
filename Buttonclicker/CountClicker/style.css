@@ -1,19 +1,22 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body{
-    background-color: black;
+    background-image: none;
     margin: 0;
+    background-color: black;
     padding: 0;
 }
 
 div#caja{
+    background: inherit;
     margin: 40px;
     border: solid 1px rgb(0, 255, 0);
     border-radius: 5px;
-    background-color: black;
 }
 
 div#paneles{
@@ -22,16 +25,16 @@ div#paneles{
 
 div#caja2{
     margin: 40px;
+    background-color: inherit;
     border: solid 1px rgb(0, 255, 0);
     border-radius: 5px;
-    background-color: black;
 }
 
 div#caja3{
     margin: 40px;
+    background-color: inherit;
     border: solid 1px rgb(0, 255, 0);
     border-radius: 5px;
-    background-color: black;
 }
 
 h1{
@@ -50,7 +53,7 @@ p.indicador-panel{
 #sumar{
     border: solid 2px rgb(0, 255, 0);
     border-radius: 5px;
-    background-color: black;
+    background: inherit;
     color: rgb(0, 255, 0);
     font-size: 20px;
     padding: 10px 2em;
@@ -60,7 +63,7 @@ p.indicador-panel{
 #sumar:active{
     border: solid 2px rgb(0, 100, 0);
     border-radius: 5px;
-    background-color: black;
+    background: inherit;
     color: rgb(0, 100, 0);
     font-size: 20px;
     padding: 10px 2em;
@@ -70,7 +73,7 @@ p.indicador-panel{
 #sumar:disabled{
     border: solid 2px rgb(46, 42, 42);
     border-radius: 5px;
-    background-color: black;
+    background: inherit;
     color: rgb(46, 42, 42);
     font-size: 20px;
     padding: 10px 2em;
@@ -80,7 +83,7 @@ p.indicador-panel{
 #mejorar{
     border: solid 2px rgb(0, 255, 0);
     border-radius: 5px;
-    background-color: black;
+    background: inherit;
     color: rgb(0, 255, 0);
     font-size: 20px;
     padding: 10px 2em;
@@ -90,7 +93,7 @@ p.indicador-panel{
 #mejorar:active{
     border: solid 2px rgb(0, 100, 0);
     border-radius: 5px;
-    background-color: black;
+    background: inherit;
     color: rgb(0, 100, 0);
     font-size: 20px;
     padding: 10px 2em;
@@ -100,7 +103,7 @@ p.indicador-panel{
 #mejorar:disabled{
     border: solid 2px rgb(46, 42, 42);
     border-radius: 5px;
-    background-color: black;
+    background: inherit;
     color: rgb(46, 42, 42);
     font-size: 20px;
     padding: 10px 2em;
@@ -210,6 +213,13 @@ p{
 #f-espacio{
     height: 40px;
     width: 40px;
-    background-image: linear-gradient(rgb(9, 17, 66), rgb(28, 38, 103), rgb(9, 17, 66));
+    background-image: url("icono-espacio.jpg");
+    margin: 10px
+}
+
+#f-anime{
+    height: 40px;
+    width: 40px;
+    background-image: url("anime.png");
     margin: 10px
 }

@@ -1,3 +1,7 @@
+// █ █▄░█ █ █▀▀ █ █▀█   █▀▄ █▀▀ █░░   █▀▀ █▀█ █▀▄ █▀▀
+// █ █░▀█ █ █▄▄ █ █▄█   █▄▀ ██▄ █▄▄   █▄▄ █▄█ █▄▀ ██▄
+
+
 let sumar = document.querySelector('#sumar');
 let mejorar = document.querySelector('#mejorar');
 let h1 = document.querySelector('#contador');
@@ -16,6 +20,9 @@ let sumador = 1;
 let diamante = 0;
 let clicks = 0;
 // Cuantas variables O_o
+
+// █▀ █░█ █▀▄▀█ ▄▀█ █▀█   █▄█   █▀▄▀█ █▀▀ ░░█ █▀█ █▀█ ▄▀█ █▀█
+// ▄█ █▄█ █░▀░█ █▀█ █▀▄   ░█░   █░▀░█ ██▄ █▄█ █▄█ █▀▄ █▀█ █▀▄
 
 function sumaMejorar(){
     if (event.target.id == 'sumar'){
@@ -61,6 +68,10 @@ function sumaMejorar(){
         }
     }
 }
+
+
+// █▀▀ █▀█ █░░ █▀█ █▀█ █▀▀ █▀
+// █▄▄ █▄█ █▄▄ █▄█ █▀▄ ██▄ ▄█
 
 function cambioColor(){
 
@@ -209,6 +220,32 @@ function cambioColor(){
     }
 }
 
+
+// █▀▀ █▀█ █▄░█ █▀▄ █▀█ █▀
+// █▀░ █▄█ █░▀█ █▄▀ █▄█ ▄█
+
+function cambioFondo(){
+    if (event.target.id == "f-negro"){
+        let body = document.querySelector('body');
+        body.style.backgroundImage = "none"; 
+    }
+    if (event.target.id == "f-espacio"){
+        let body = document.querySelector('body');
+        body.style.backgroundImage = "url('espacio4.jpg')"; 
+    }
+    if (event.target.id == "f-ciudad"){
+        let body = document.querySelector('body');
+        body.style.backgroundImage = "url('ciudad.jpg')"; 
+    }
+    if (event.target.id == "f-anime"){
+        let body = document.querySelector('body');
+        body.style.backgroundImage = "url('anime.png')"; 
+    }
+}
+
+
+// ▀█▀ █ █▀▀ █▀▄▀█ █▀█ █▀█
+// ░█░ █ ██▄ █░▀░█ █▀▀ █▄█
 function tiempoJuego(){
     let segundos1 = 0;
     let segundos2 = 0;
@@ -231,4 +268,5 @@ function tiempoJuego(){
         horas;
         minutos2 == 0;
     }
+    segundos1++;
 }
