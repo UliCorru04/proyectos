@@ -9,15 +9,40 @@
 </head>
 <body>
     <div id="caja">
-        <p>0:00:00 ⏱️</p> <p id="monedas">0 💎</p> 
+        <div id="tiempo">
+            <p>0:00:00</p><p>⏱️</p>
+        </div>
+        <div id="diamante">
+            <p class="diamantes">0</p><p>💎</p> 
+        </div>
         <h1 id="contador">0</h1>
         <button id="sumar" onclick="sumaMejorar()">Sumar</button>
         <button id="mejorar" onclick="sumaMejorar()">Mejorar</button>
     </div>
-    <div id="rojo" class="boton" onclick="cambioColor()"></div>
-    <div id="azul" class="boton" onclick="cambioColor()"></div>
-    <div id="verde" class="boton" onclick="cambioColor()"></div>
-    <div id="violeta" class="boton" onclick="cambioColor()"></div>
+    <div id="paneles">
+        <div id="caja2">
+            <p class="indicador-panel">Cambiar color</p>
+            <div id="panel-de-colores">
+                <button id="rojo" class="boton" onclick="cambioColor()"></button>
+                <button id="azul" class="boton" onclick="cambioColor()"></button>
+                <button id="verde" class="boton" onclick="cambioColor()"></button>
+                <button id="amarillo" class="boton" onclick="cambioColor()"></button>
+                <button id="violeta" class="boton" onclick="cambioColor()"><p id="venta-violeta" class="candado" onclick="cambioColor()">🔒</p></button>
+                <button id="blanco" class="boton" onclick="cambioColor()"><p id="venta-blanco" class="candado" onclick="cambioColor()">🔒</p></button>
+                <button id="marron" class="boton" onclick="cambioColor()"><p id="venta-marron" class="candado" onclick="cambioColor()">🔒</p></button>
+                <button id="gradiente" class="boton" onclick="cambioColor()"><p id="venta-gradiente" class="candado" onclick="cambioColor()">🔒</p></button>
+            </div>
+        </div>
+        <div id="caja3">
+            <p class="indicador-panel">Cambiar fondo</p>
+            <div id="panel-de-fondo">
+                <button id="f-negro" class="boton" onclick="cambioFondo()"></button>
+                <button id="f-espacio" class="boton" onclick="cambioFondo()"></button>
+                <button id="f-anime" class="boton" onclick="cambioFondo()"></button>
+                <button id="f-ciudad" class="boton" onclick="cambioFondo()"></button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>

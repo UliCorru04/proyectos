@@ -9,7 +9,25 @@ body{
     padding: 0;
 }
 
-#caja{
+div#caja{
+    margin: 40px;
+    border: solid 1px rgb(0, 255, 0);
+    border-radius: 5px;
+    background-color: black;
+}
+
+div#paneles{
+    display: flex;
+}
+
+div#caja2{
+    margin: 40px;
+    border: solid 1px rgb(0, 255, 0);
+    border-radius: 5px;
+    background-color: black;
+}
+
+div#caja3{
     margin: 40px;
     border: solid 1px rgb(0, 255, 0);
     border-radius: 5px;
@@ -23,6 +41,10 @@ h1{
 
 button{
     margin-bottom: 10px;
+}
+
+p.indicador-panel{
+    text-align: center;
 }
 
 #sumar{
@@ -46,10 +68,10 @@ button{
 }
 
 #sumar:disabled{
-    border: solid 2px rgb(100, 0, 0);
+    border: solid 2px rgb(46, 42, 42);
     border-radius: 5px;
     background-color: black;
-    color: rgb(100, 0, 0);
+    color: rgb(46, 42, 42);
     font-size: 20px;
     padding: 10px 2em;
     transition: 0.1s;
@@ -94,31 +116,100 @@ p{
     font-size: 20px;
 }
 
+#panel-de-colores{
+    display: flex;
+}
+
+#tiempo, #diamante{
+    display: flex;
+    justify-content: end;
+}
+
 .boton{
-    margin: 20px;
-    display: block;
+    border: 0;
 }
 
 #rojo{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: red;
+    margin: 10px;
 }
 
 #azul{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: blue;
+    margin: 10px;
 }
 
 #verde{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: rgb(0, 255, 0);
+    margin: 10px;
+}
+
+#amarillo{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 0);
+    margin: 10px;
 }
 
 #violeta{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: rgb(255, 0, 255);
+    margin: 10px;
+}
+
+#blanco{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+#marron{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(77, 36, 13);
+    margin: 10px;
+}
+
+#gradiente{
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(255, 128, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255));  
+    margin: 10px;
+}
+
+#f-negro{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px white;
+    margin: 10px
+}
+
+#f-anime{
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(rgb(9, 17, 66), rgb(28, 38, 103), rgb(9, 17, 66));
+    margin: 10px
+}
+
+#f-ciudad{
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(rgb(9, 17, 66), rgb(28, 38, 103), rgb(9, 17, 66));
+    margin: 10px
+}
+
+#f-espacio{
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(rgb(9, 17, 66), rgb(28, 38, 103), rgb(9, 17, 66));
+    margin: 10px
 }
