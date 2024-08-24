@@ -5,15 +5,20 @@
 let sumar = document.querySelector('#sumar');
 let mejorar = document.querySelector('#mejorar');
 let h1 = document.querySelector('#contador');
+let h2 = document.querySelector('#mensajeria');
 let violeta = document.querySelector('#violeta');
 let blanco = document.querySelector('#blanco');
 let marron = document.querySelector('#marron');
 let gradiente = document.querySelector('#gradiente');
+let diamantefondo = document.querySelector('#f-diamante')
+
 violeta.disabled = true;
 blanco.disabled = true;
 marron.disabled = true;
 gradiente.disabled = true;
 mejorar.disabled = true;
+diamantefondo.disabled = true;
+
 let limite = 50;
 let n = 0;
 let sumador = 1;
@@ -76,13 +81,17 @@ function sumaMejorar(){
 function cambioColor(){
 
     if ((event.target.id == 'venta-violeta' && diamante < 1)){
-        alert('Necesitas 25 diamantes para comprar color VIOLETA');
+        h2.textContent = 'Necesitas 25 diamantes para comprar color VIOLETA';
+        h2.style.color = "red"
     } if ((event.target.id == 'venta-blanco' && diamante < 1)){
-        alert('Necesitas 25 diamantes para comprar color BLANCO');
+        h2.textContent = 'Necesitas 25 diamantes para comprar color BLANCO';
+        h2.style.color = "red"
     } if ((event.target.id == 'venta-marron' && diamante < 1)){
-        alert('Necesitas 25 diamantes para comprar color MARRÓN');
+        h2.textContent = 'Necesitas 25 diamantes para comprar color MARRÓN';
+        h2.style.color = "red"
     } if ((event.target.id == 'venta-gradiente' && diamante < 1)){
-        alert('Necesitas 50 diamantes para comprar color GRADIENTE');
+        h2.textContent = 'Necesitas 50 diamantes para comprar color GRADIENTE';
+        h2.style.color = "red"
     } 
 
     if ((event.target.id == 'venta-violeta' && diamante >= 1)){
@@ -105,7 +114,7 @@ function cambioColor(){
         diamante--;
         blockgradiente.textContent = null;
         gradiente.disabled = false;
-    } 
+    }
 
     if (event.target.id == 'rojo'){
         let caja = document.querySelector('#caja');
@@ -228,18 +237,42 @@ function cambioFondo(){
     if (event.target.id == "f-negro"){
         let body = document.querySelector('body');
         body.style.backgroundImage = "none"; 
+        h2.textContent = `Fondo cambiado a DEFAULT`;
+        h2.style.color = "green";
     }
     if (event.target.id == "f-espacio"){
         let body = document.querySelector('body');
         body.style.backgroundImage = "url('espacio4.jpg')"; 
+        h2.textContent = `Fondo cambiado a ESPACIO`;
+        h2.style.color = "green";
     }
     if (event.target.id == "f-ciudad"){
         let body = document.querySelector('body');
-        body.style.backgroundImage = "url('ciudad.jpg')"; 
+        body.style.backgroundImage = "url('ciudad.png')"; 
+        h2.textContent = `Fondo cambiado a CIUDAD`;
+        h2.style.color = "green";
     }
     if (event.target.id == "f-anime"){
         let body = document.querySelector('body');
-        body.style.backgroundImage = "url('anime.png')"; 
+        body.style.backgroundImage = "url('miku.png')"; 
+        h2.textContent = `Fondo cambiado a ANIME`;
+        h2.style.color = "green";
+    }
+    if (event.target.id == "f-diamante"){
+        let body = document.querySelector('body');
+        body.style.backgroundImage = "url('mminecraft.jpg')"; 
+        h2.textContent = `Fondo cambiado a DIAMANTE`;
+        h2.style.color = "green";
+    }
+    if (event.target.id == "venta-diamante"){
+        let nol = ["?????", "Hable con propiedad alumno", "No tienes por qué perder el tiempo aquí", "Vamos a volar en un avión",
+        "OOH OOH OOH OOH OOH SQUARE ROOOOMS 🗣️",
+        "Picado FULL picado",
+        "che y la mina",
+        "uwu", "El nivel 737 no es para cualquiera"];
+        const i = Math.floor(Math.random() * 9);
+        h2.textContent = `${nol[i]}`;
+        h2.style.color = "red";
     }
 }
 
@@ -269,4 +302,19 @@ function tiempoJuego(){
         minutos2 == 0;
     }
     segundos1++;
+}
+
+
+// █▀▀ ▄▀█ █▀ ▀█▀ █▀▀ █▀█   █▀▀ █▀▀ █▀▀
+// ██▄ █▀█ ▄█ ░█░ ██▄ █▀▄   ██▄ █▄█ █▄█
+
+function easterEgg(){
+    if (event.target.id == 'diamantito'){
+         h2.textContent = "[¡DIAMONDS!]";
+         h2.style.color = "rgb(100, 255, 100)";
+        let blockdiamante = document.querySelector('#venta-diamante');
+        blockdiamante.textContent = null;
+        diamantefondo.disabled = false;
+        document.querySelector("#diamantito").removeAttribute("onclick")
+    }
 }

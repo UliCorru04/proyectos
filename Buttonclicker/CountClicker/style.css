@@ -119,6 +119,10 @@ p{
     font-size: 20px;
 }
 
+h2{
+    color: white;
+}
+
 #panel-de-colores{
     display: flex;
 }
@@ -220,6 +224,13 @@ p{
 #f-anime{
     height: 40px;
     width: 40px;
-    background-image: url("anime.png");
+    background-image: url("miku-icono.jpg");
+    margin: 10px
+}
+
+#f-diamante{
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(rgb(9, 17, 66), rgb(28, 38, 103), rgb(9, 17, 66));
     margin: 10px
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CountClicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,12 +13,13 @@
             <p>0:00:00</p><p>⏱️</p>
         </div>
         <div id="diamante">
-            <p class="diamantes">0</p><p>💎</p> 
+            <p class="diamantes">0</p><p id="diamantito" onclick="easterEgg()">💎</p> 
         </div>
         <h1 id="contador">0</h1>
         <button id="sumar" onclick="sumaMejorar()">Sumar</button>
         <button id="mejorar" onclick="sumaMejorar()">Mejorar</button>
     </div>
+    <h2 id="mensajeria">...</h2>
     <div id="paneles">
         <div id="caja2">
             <p class="indicador-panel">Cambiar color</p>
@@ -40,6 +41,7 @@
                 <button id="f-espacio" class="boton" onclick="cambioFondo()"></button>
                 <button id="f-anime" class="boton" onclick="cambioFondo()"></button>
                 <button id="f-ciudad" class="boton" onclick="cambioFondo()"></button>
+                <button id="f-diamante" class="boton" onclick="cambioFondo()"><p id="venta-diamante" class="candado" onclick="cambioFondo()">🔒</p></button>
             </div>
         </div>
     </div>
